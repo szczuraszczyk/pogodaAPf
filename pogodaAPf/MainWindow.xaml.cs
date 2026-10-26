@@ -12,17 +12,27 @@ using System.Windows.Threading;
 
 namespace pogodaAPf
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
     public partial class MainWindow : Window
     {
-        private readonly DispatcherTimer _dispatcherTimer = new();
         public MainWindow()
         {
             InitializeComponent();
 
+            DispatcherTimer timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+            timer.Tick += timer_Tick;
+            timer.Start();
         }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            BlockGodzina.Text = DateTime.Now.ToString("HH:mm:ss");
+            DateBlock.Text = DateTime.Now.ToString("dddd, d MMMM yyyy");
+            BlockGodzinaTokio.Text = DateTime.Now.AddHours(8).ToString("HH:mm:ss");
+            DateBlockTokio.Text = DateTime.Now.AddHours(8).ToString("dddd, d MMMM yyyy");
+        }
+
     } 
 }

@@ -7,14 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="168,150,0,0" TextWrapping="Wrap" Text="mexico . . ." VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontFamily="Tempus Sans ITC" Foreground="#FF793A3A"/>
+        <TextBox HorizontalAlignment="Left" Margin="168,150,0,0" TextWrapping="Wrap" Text="mexico . . ." VerticalAlignment="Top" Width="120" FontFamily="Tempus Sans ITC" Foreground="#FF793A3A"/>
         <TextBlock HorizontalAlignment="Left" Margin="113,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"><Run Language="pl-pl" Text="wybierz miejsce"/></TextBlock>
         <TreeView Margin="103,207,444,75"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="268,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.181,-0.077" Foreground="#FF5B2323" BorderBrush="#FFDE4848" Background="#FFD88C8C"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF2A6488" FontFamily="MV Boli" FontSize="48"><Run Language="pl-pl" Text="Pogodynka"/></TextBlock>
         <Image HorizontalAlignment="Left" Height="100" Margin="601,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBlock x:Name="TimeBlock" HorizontalAlignment="Left" Margin="541,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF882988" FontFamily="Freestyle Script" FontSize="72"><Run Language="pl-pl" Text="00:00:00"/></TextBlock>
-        <TextBlock x:Name="DateBlock" HorizontalAlignment="Left" Margin="548,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF7F4646" FontFamily="Lucida Handwriting" FontSize="18" Width="159"><Run Language="pl-pl" Text="1 stycznia 2026 "/></TextBlock>
+        <TextBlock x:Name="BlockGodzina" HorizontalAlignment="Left" Margin="512,146,0,0" TextAlignment="center" VerticalAlignment="Top" Foreground="#FF882988" FontFamily="Freestyle Script" FontSize="72" Text="00:00:00"/>
+        <TextBlock x:Name="DateBlock" HorizontalAlignment="Left" Margin="404,215,0,0" TextAlignment="center" VerticalAlignment="Top" Foreground="#FF7F4646" FontFamily="Lucida Handwriting" FontSize="16" Width="394" Text="poniedziałek, 1 stycznia 2026" />
+        <TextBlock x:Name="BlockGodzinaTokio" HorizontalAlignment="Left" Margin="512,238,0,0" TextAlignment="center" VerticalAlignment="Top" Foreground="#FF882988" FontFamily="Freestyle Script" FontSize="72" Text="00:00:00"/>
+        <TextBlock x:Name="DateBlockTokio" HorizontalAlignment="Left" Margin="404,307,0,0" TextAlignment="center" VerticalAlignment="Top" Foreground="#FF7F4646" FontFamily="Lucida Handwriting" FontSize="16" Width="394" Text="poniedziałek, 1 stycznia 2026" />
 
     </Grid>
 </Window>
